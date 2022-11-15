@@ -1,0 +1,31 @@
+query EXAMPLE_GET_PROGRAM_BY_ID {
+  programs_by_id(id: "e8c61476-b90e-4195-885b-2c3723a668fc") {
+    id
+    name
+    description
+    age_from
+    age_to
+    program_type_id {
+      id
+      name
+      photo_id {
+        id
+      }
+    }
+    date_list {
+      id
+      date_start
+      date_finish
+      cost
+      services
+      social_certificate
+      cashback
+      payment_types {
+        payment_types_id {
+          id
+          name
+        }
+      }
+    }
+  }
+}

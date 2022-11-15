@@ -1,0 +1,42 @@
+query EXAMPLE_GET_SVR_BY_ID($id: ID!) {
+  svrs_by_id(id: $id) {
+    id
+    name
+    slogan
+    address
+    pool_list {
+      type_id {
+        name
+      }
+      size_id {
+        name
+      }
+    }
+    social_network_list {
+      type
+      link
+    }
+    photo_list {
+      photo_id {
+        id
+      }
+      type
+      sort
+    }
+    pool_list {
+      id
+      type_id {
+        name
+      }
+      size_id {
+        name
+      }
+      photo_list {
+        id
+        photo_id {
+          id
+        }
+      }
+    }
+  }
+}

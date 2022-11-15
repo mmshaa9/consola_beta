@@ -1,0 +1,10 @@
+mutation EXAMPLE_CREATE_SUBSCRIBER {
+  create_subscribers_item(
+    data: {
+      first_name: "John"
+      last_name: "Doe"
+      email: "john@example.com"
+      phone: "+79261234567"
+    }
+  )
+}

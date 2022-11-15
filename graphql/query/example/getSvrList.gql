@@ -1,0 +1,27 @@
+query EXAMPLE_GET_SVR_LIST {
+  svrs {
+    id
+    name
+    slogan
+    address
+    pool_list {
+      type_id {
+        name
+      }
+      size_id {
+        name
+      }
+    }
+    social_network_list {
+      type
+      link
+    }
+    photo_list {
+      photo_id {
+        id
+      }
+      type
+      sort
+    }
+  }
+}

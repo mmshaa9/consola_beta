@@ -1,0 +1,2438 @@
+# This file was generated based on ".graphqlconfig". Do not edit manually.
+
+schema {
+  query: Query
+  mutation: Mutation
+}
+
+type Mutation {
+  create_subscribers_item(data: create_subscribers_input!): Boolean
+  create_subscribers_items(data: [create_subscribers_input!]): Boolean
+}
+
+type Query {
+  beach_distance_types(
+    filter: beach_distance_types_filter
+    limit: Int
+    offset: Int
+    page: Int
+    search: String
+    sort: [String]
+  ): [beach_distance_types!]!
+  beach_distance_types_aggregated(
+    filter: beach_distance_types_filter
+    groupBy: [String]
+    limit: Int
+    search: String
+    sort: [String]
+  ): [beach_distance_types_aggregated!]!
+  beach_distance_types_by_id(id: ID!): beach_distance_types
+  bed_types(
+    filter: bed_types_filter
+    limit: Int
+    offset: Int
+    page: Int
+    search: String
+    sort: [String]
+  ): [bed_types!]!
+  bed_types_aggregated(
+    filter: bed_types_filter
+    groupBy: [String]
+    limit: Int
+    search: String
+    sort: [String]
+  ): [bed_types_aggregated!]!
+  bed_types_by_id(id: ID!): bed_types
+  building_photos(
+    filter: building_photos_filter
+    limit: Int
+    offset: Int
+    page: Int
+    search: String
+    sort: [String]
+  ): [building_photos!]!
+  building_photos_aggregated(
+    filter: building_photos_filter
+    groupBy: [String]
+    limit: Int
+    search: String
+    sort: [String]
+  ): [building_photos_aggregated!]!
+  building_photos_by_id(id: ID!): building_photos
+  building_types(
+    filter: building_types_filter
+    limit: Int
+    offset: Int
+    page: Int
+    search: String
+    sort: [String]
+  ): [building_types!]!
+  building_types_aggregated(
+    filter: building_types_filter
+    groupBy: [String]
+    limit: Int
+    search: String
+    sort: [String]
+  ): [building_types_aggregated!]!
+  building_types_by_id(id: ID!): building_types
+  buildings(
+    filter: buildings_filter
+    limit: Int
+    offset: Int
+    page: Int
+    search: String
+    sort: [String]
+  ): [buildings!]!
+  buildings_aggregated(
+    filter: buildings_filter
+    groupBy: [String]
+    limit: Int
+    search: String
+    sort: [String]
+  ): [buildings_aggregated!]!
+  buildings_by_id(id: ID!): buildings
+  cities(
+    filter: cities_filter
+    limit: Int
+    offset: Int
+    page: Int
+    search: String
+    sort: [String]
+  ): [cities!]!
+  cities_aggregated(
+    filter: cities_filter
+    groupBy: [String]
+    limit: Int
+    search: String
+    sort: [String]
+  ): [cities_aggregated!]!
+  cities_by_id(id: ID!): cities
+  meal_plans(
+    filter: meal_plans_filter
+    limit: Int
+    offset: Int
+    page: Int
+    search: String
+    sort: [String]
+  ): [meal_plans!]!
+  meal_plans_aggregated(
+    filter: meal_plans_filter
+    groupBy: [String]
+    limit: Int
+    search: String
+    sort: [String]
+  ): [meal_plans_aggregated!]!
+  meal_plans_by_id(id: ID!): meal_plans
+  meals(
+    filter: meals_filter
+    limit: Int
+    offset: Int
+    page: Int
+    search: String
+    sort: [String]
+  ): [meals!]!
+  meals_aggregated(
+    filter: meals_filter
+    groupBy: [String]
+    limit: Int
+    search: String
+    sort: [String]
+  ): [meals_aggregated!]!
+  meals_by_id(id: ID!): meals
+  medical_staff_specializations(
+    filter: medical_staff_specializations_filter
+    limit: Int
+    offset: Int
+    page: Int
+    search: String
+    sort: [String]
+  ): [medical_staff_specializations!]!
+  medical_staff_specializations_aggregated(
+    filter: medical_staff_specializations_filter
+    groupBy: [String]
+    limit: Int
+    search: String
+    sort: [String]
+  ): [medical_staff_specializations_aggregated!]!
+  medical_staff_specializations_by_id(id: ID!): medical_staff_specializations
+  medical_staffs(
+    filter: medical_staffs_filter
+    limit: Int
+    offset: Int
+    page: Int
+    search: String
+    sort: [String]
+  ): [medical_staffs!]!
+  medical_staffs_aggregated(
+    filter: medical_staffs_filter
+    groupBy: [String]
+    limit: Int
+    search: String
+    sort: [String]
+  ): [medical_staffs_aggregated!]!
+  medical_staffs_by_id(id: ID!): medical_staffs
+  nutrition_types(
+    filter: nutrition_types_filter
+    limit: Int
+    offset: Int
+    page: Int
+    search: String
+    sort: [String]
+  ): [nutrition_types!]!
+  nutrition_types_aggregated(
+    filter: nutrition_types_filter
+    groupBy: [String]
+    limit: Int
+    search: String
+    sort: [String]
+  ): [nutrition_types_aggregated!]!
+  nutrition_types_by_id(id: ID!): nutrition_types
+  payment_types(
+    filter: payment_types_filter
+    limit: Int
+    offset: Int
+    page: Int
+    search: String
+    sort: [String]
+  ): [payment_types!]!
+  payment_types_aggregated(
+    filter: payment_types_filter
+    groupBy: [String]
+    limit: Int
+    search: String
+    sort: [String]
+  ): [payment_types_aggregated!]!
+  payment_types_by_id(id: ID!): payment_types
+  pool_photos(
+    filter: pool_photos_filter
+    limit: Int
+    offset: Int
+    page: Int
+    search: String
+    sort: [String]
+  ): [pool_photos!]!
+  pool_photos_aggregated(
+    filter: pool_photos_filter
+    groupBy: [String]
+    limit: Int
+    search: String
+    sort: [String]
+  ): [pool_photos_aggregated!]!
+  pool_photos_by_id(id: ID!): pool_photos
+  pool_size_types(
+    filter: pool_size_types_filter
+    limit: Int
+    offset: Int
+    page: Int
+    search: String
+    sort: [String]
+  ): [pool_size_types!]!
+  pool_size_types_aggregated(
+    filter: pool_size_types_filter
+    groupBy: [String]
+    limit: Int
+    search: String
+    sort: [String]
+  ): [pool_size_types_aggregated!]!
+  pool_size_types_by_id(id: ID!): pool_size_types
+  pool_types(
+    filter: pool_types_filter
+    limit: Int
+    offset: Int
+    page: Int
+    search: String
+    sort: [String]
+  ): [pool_types!]!
+  pool_types_aggregated(
+    filter: pool_types_filter
+    groupBy: [String]
+    limit: Int
+    search: String
+    sort: [String]
+  ): [pool_types_aggregated!]!
+  pool_types_by_id(id: ID!): pool_types
+  pool_water_types(
+    filter: pool_water_types_filter
+    limit: Int
+    offset: Int
+    page: Int
+    search: String
+    sort: [String]
+  ): [pool_water_types!]!
+  pool_water_types_aggregated(
+    filter: pool_water_types_filter
+    groupBy: [String]
+    limit: Int
+    search: String
+    sort: [String]
+  ): [pool_water_types_aggregated!]!
+  pool_water_types_by_id(id: ID!): pool_water_types
+  pools(
+    filter: pools_filter
+    limit: Int
+    offset: Int
+    page: Int
+    search: String
+    sort: [String]
+  ): [pools!]!
+  pools_aggregated(
+    filter: pools_filter
+    groupBy: [String]
+    limit: Int
+    search: String
+    sort: [String]
+  ): [pools_aggregated!]!
+  pools_by_id(id: ID!): pools
+  program_dates(
+    filter: program_dates_filter
+    limit: Int
+    offset: Int
+    page: Int
+    search: String
+    sort: [String]
+  ): [program_dates!]!
+  program_dates_aggregated(
+    filter: program_dates_filter
+    groupBy: [String]
+    limit: Int
+    search: String
+    sort: [String]
+  ): [program_dates_aggregated!]!
+  program_dates_by_id(id: ID!): program_dates
+  program_dates_payment_types(
+    filter: program_dates_payment_types_filter
+    limit: Int
+    offset: Int
+    page: Int
+    search: String
+    sort: [String]
+  ): [program_dates_payment_types!]!
+  program_dates_payment_types_aggregated(
+    filter: program_dates_payment_types_filter
+    groupBy: [String]
+    limit: Int
+    search: String
+    sort: [String]
+  ): [program_dates_payment_types_aggregated!]!
+  program_dates_payment_types_by_id(id: ID!): program_dates_payment_types
+  program_types(
+    filter: program_types_filter
+    limit: Int
+    offset: Int
+    page: Int
+    search: String
+    sort: [String]
+  ): [program_types!]!
+  program_types_aggregated(
+    filter: program_types_filter
+    groupBy: [String]
+    limit: Int
+    search: String
+    sort: [String]
+  ): [program_types_aggregated!]!
+  program_types_by_id(id: ID!): program_types
+  programs(
+    filter: programs_filter
+    limit: Int
+    offset: Int
+    page: Int
+    search: String
+    sort: [String]
+  ): [programs!]!
+  programs_aggregated(
+    filter: programs_filter
+    groupBy: [String]
+    limit: Int
+    search: String
+    sort: [String]
+  ): [programs_aggregated!]!
+  programs_by_id(id: ID!): programs
+  regions(
+    filter: regions_filter
+    limit: Int
+    offset: Int
+    page: Int
+    search: String
+    sort: [String]
+  ): [regions!]!
+  regions_aggregated(
+    filter: regions_filter
+    groupBy: [String]
+    limit: Int
+    search: String
+    sort: [String]
+  ): [regions_aggregated!]!
+  regions_by_id(id: ID!): regions
+  room_types(
+    filter: room_types_filter
+    limit: Int
+    offset: Int
+    page: Int
+    search: String
+    sort: [String]
+  ): [room_types!]!
+  room_types_aggregated(
+    filter: room_types_filter
+    groupBy: [String]
+    limit: Int
+    search: String
+    sort: [String]
+  ): [room_types_aggregated!]!
+  room_types_by_id(id: ID!): room_types
+  rooms(
+    filter: rooms_filter
+    limit: Int
+    offset: Int
+    page: Int
+    search: String
+    sort: [String]
+  ): [rooms!]!
+  rooms_aggregated(
+    filter: rooms_filter
+    groupBy: [String]
+    limit: Int
+    search: String
+    sort: [String]
+  ): [rooms_aggregated!]!
+  rooms_by_id(id: ID!): rooms
+  security_types(
+    filter: security_types_filter
+    limit: Int
+    offset: Int
+    page: Int
+    search: String
+    sort: [String]
+  ): [security_types!]!
+  security_types_aggregated(
+    filter: security_types_filter
+    groupBy: [String]
+    limit: Int
+    search: String
+    sort: [String]
+  ): [security_types_aggregated!]!
+  security_types_by_id(id: ID!): security_types
+  social_networks(
+    filter: social_networks_filter
+    limit: Int
+    offset: Int
+    page: Int
+    search: String
+    sort: [String]
+  ): [social_networks!]!
+  social_networks_aggregated(
+    filter: social_networks_filter
+    groupBy: [String]
+    limit: Int
+    search: String
+    sort: [String]
+  ): [social_networks_aggregated!]!
+  social_networks_by_id(id: ID!): social_networks
+  sport_photos(
+    filter: sport_photos_filter
+    limit: Int
+    offset: Int
+    page: Int
+    search: String
+    sort: [String]
+  ): [sport_photos!]!
+  sport_photos_aggregated(
+    filter: sport_photos_filter
+    groupBy: [String]
+    limit: Int
+    search: String
+    sort: [String]
+  ): [sport_photos_aggregated!]!
+  sport_photos_by_id(id: ID!): sport_photos
+  sport_types(
+    filter: sport_types_filter
+    limit: Int
+    offset: Int
+    page: Int
+    search: String
+    sort: [String]
+  ): [sport_types!]!
+  sport_types_aggregated(
+    filter: sport_types_filter
+    groupBy: [String]
+    limit: Int
+    search: String
+    sort: [String]
+  ): [sport_types_aggregated!]!
+  sport_types_by_id(id: ID!): sport_types
+  sports(
+    filter: sports_filter
+    limit: Int
+    offset: Int
+    page: Int
+    search: String
+    sort: [String]
+  ): [sports!]!
+  sports_aggregated(
+    filter: sports_filter
+    groupBy: [String]
+    limit: Int
+    search: String
+    sort: [String]
+  ): [sports_aggregated!]!
+  sports_by_id(id: ID!): sports
+  staff_specializations(
+    filter: staff_specializations_filter
+    limit: Int
+    offset: Int
+    page: Int
+    search: String
+    sort: [String]
+  ): [staff_specializations!]!
+  staff_specializations_aggregated(
+    filter: staff_specializations_filter
+    groupBy: [String]
+    limit: Int
+    search: String
+    sort: [String]
+  ): [staff_specializations_aggregated!]!
+  staff_specializations_by_id(id: ID!): staff_specializations
+  staffs(
+    filter: staffs_filter
+    limit: Int
+    offset: Int
+    page: Int
+    search: String
+    sort: [String]
+  ): [staffs!]!
+  staffs_aggregated(
+    filter: staffs_filter
+    groupBy: [String]
+    limit: Int
+    search: String
+    sort: [String]
+  ): [staffs_aggregated!]!
+  staffs_by_id(id: ID!): staffs
+  svr_photos(
+    filter: svr_photos_filter
+    limit: Int
+    offset: Int
+    page: Int
+    search: String
+    sort: [String]
+  ): [svr_photos!]!
+  svr_photos_aggregated(
+    filter: svr_photos_filter
+    groupBy: [String]
+    limit: Int
+    search: String
+    sort: [String]
+  ): [svr_photos_aggregated!]!
+  svr_photos_by_id(id: ID!): svr_photos
+  svr_types(
+    filter: svr_types_filter
+    limit: Int
+    offset: Int
+    page: Int
+    search: String
+    sort: [String]
+  ): [svr_types!]!
+  svr_types_aggregated(
+    filter: svr_types_filter
+    groupBy: [String]
+    limit: Int
+    search: String
+    sort: [String]
+  ): [svr_types_aggregated!]!
+  svr_types_by_id(id: ID!): svr_types
+  svrs(
+    filter: svrs_filter
+    limit: Int
+    offset: Int
+    page: Int
+    search: String
+    sort: [String]
+  ): [svrs!]!
+  svrs_aggregated(
+    filter: svrs_filter
+    groupBy: [String]
+    limit: Int
+    search: String
+    sort: [String]
+  ): [svrs_aggregated!]!
+  svrs_by_id(id: ID!): svrs
+}
+
+type beach_distance_types {
+  id: ID
+  name: String!
+}
+
+type beach_distance_types_aggregated {
+  count: beach_distance_types_aggregated_count
+  countAll: Int
+  countDistinct: beach_distance_types_aggregated_count
+  group: JSON
+}
+
+type beach_distance_types_aggregated_count {
+  id: Int
+  name: Int
+}
+
+type bed_types {
+  id: ID
+  name: String!
+}
+
+type bed_types_aggregated {
+  count: bed_types_aggregated_count
+  countAll: Int
+  countDistinct: bed_types_aggregated_count
+  group: JSON
+}
+
+type bed_types_aggregated_count {
+  id: Int
+  name: Int
+}
+
+type building_photos {
+  building_id(
+    filter: buildings_filter
+    limit: Int
+    offset: Int
+    page: Int
+    search: String
+    sort: [String]
+  ): buildings
+  id: ID
+  photo_id(
+    filter: directus_files_filter
+    limit: Int
+    offset: Int
+    page: Int
+    search: String
+    sort: [String]
+  ): directus_files
+  sort: Int
+}
+
+type building_photos_aggregated {
+  avg: building_photos_aggregated_fields
+  avgDistinct: building_photos_aggregated_fields
+  count: building_photos_aggregated_count
+  countAll: Int
+  countDistinct: building_photos_aggregated_count
+  group: JSON
+  max: building_photos_aggregated_fields
+  min: building_photos_aggregated_fields
+  sum: building_photos_aggregated_fields
+  sumDistinct: building_photos_aggregated_fields
+}
+
+type building_photos_aggregated_count {
+  building_id: Int
+  id: Int
+  photo_id: Int
+  sort: Int
+}
+
+type building_photos_aggregated_fields {
+  sort: Float
+}
+
+type building_types {
+  id: ID
+  name: String!
+}
+
+type building_types_aggregated {
+  count: building_types_aggregated_count
+  countAll: Int
+  countDistinct: building_types_aggregated_count
+  group: JSON
+}
+
+type building_types_aggregated_count {
+  id: Int
+  name: Int
+}
+
+type buildings {
+  floors_count: String!
+  id: ID
+  name: String!
+  photo_list(
+    filter: building_photos_filter
+    limit: Int
+    offset: Int
+    page: Int
+    search: String
+    sort: [String]
+  ): [building_photos]
+  photo_list_func: count_functions
+  public_spaces: String
+  reconstruction_date: Date
+  reconstruction_date_func: date_functions
+  sections: String
+  storage_locations: String
+  svr_id(
+    filter: svrs_filter
+    limit: Int
+    offset: Int
+    page: Int
+    search: String
+    sort: [String]
+  ): svrs
+  type_id(
+    filter: building_types_filter
+    limit: Int
+    offset: Int
+    page: Int
+    search: String
+    sort: [String]
+  ): building_types
+}
+
+type buildings_aggregated {
+  count: buildings_aggregated_count
+  countAll: Int
+  countDistinct: buildings_aggregated_count
+  group: JSON
+}
+
+type buildings_aggregated_count {
+  floors_count: Int
+  id: Int
+  name: Int
+  photo_list: Int
+  public_spaces: Int
+  reconstruction_date: Int
+  sections: Int
+  storage_locations: Int
+  svr_id: Int
+  type_id: Int
+}
+
+type cities {
+  id: ID
+  is_regional_center: Boolean!
+  name: String!
+  region_id(
+    filter: regions_filter
+    limit: Int
+    offset: Int
+    page: Int
+    search: String
+    sort: [String]
+  ): regions
+}
+
+type cities_aggregated {
+  count: cities_aggregated_count
+  countAll: Int
+  countDistinct: cities_aggregated_count
+  group: JSON
+}
+
+type cities_aggregated_count {
+  id: Int
+  is_regional_center: Int
+  name: Int
+  region_id: Int
+}
+
+type count_functions {
+  count: Int
+}
+
+type date_functions {
+  day: Int
+  month: Int
+  week: Int
+  weekday: Int
+  year: Int
+}
+
+type datetime_functions {
+  day: Int
+  hour: Int
+  minute: Int
+  month: Int
+  second: Int
+  week: Int
+  weekday: Int
+  year: Int
+}
+
+type directus_files {
+  charset: String
+  description: String
+  duration: Int
+  embed: String
+  filename_disk: String
+  filename_download: String!
+  filesize: String
+  folder: String
+  height: Int
+  id: ID
+  location: String
+  metadata: JSON
+  metadata_func: count_functions
+  modified_by: String
+  modified_on: Date!
+  modified_on_func: datetime_functions
+  storage: String!
+  tags: JSON
+  tags_func: count_functions
+  title: String
+  type: String
+  uploaded_by: String
+  uploaded_on: Date!
+  uploaded_on_func: datetime_functions
+  width: Int
+}
+
+type meal_plans {
+  id: ID
+  name: String!
+}
+
+type meal_plans_aggregated {
+  count: meal_plans_aggregated_count
+  countAll: Int
+  countDistinct: meal_plans_aggregated_count
+  group: JSON
+}
+
+type meal_plans_aggregated_count {
+  id: Int
+  name: Int
+}
+
+type meals {
+  description: String!
+  id: ID
+  meal_plan_id(
+    filter: meal_plans_filter
+    limit: Int
+    offset: Int
+    page: Int
+    search: String
+    sort: [String]
+  ): meal_plans
+  nutrition_type_id(
+    filter: nutrition_types_filter
+    limit: Int
+    offset: Int
+    page: Int
+    search: String
+    sort: [String]
+  ): nutrition_types
+  svr_id(
+    filter: svrs_filter
+    limit: Int
+    offset: Int
+    page: Int
+    search: String
+    sort: [String]
+  ): svrs
+}
+
+type meals_aggregated {
+  count: meals_aggregated_count
+  countAll: Int
+  countDistinct: meals_aggregated_count
+  group: JSON
+}
+
+type meals_aggregated_count {
+  description: Int
+  id: Int
+  meal_plan_id: Int
+  nutrition_type_id: Int
+  svr_id: Int
+}
+
+type medical_staff_specializations {
+  id: ID
+  name: String!
+}
+
+type medical_staff_specializations_aggregated {
+  count: medical_staff_specializations_aggregated_count
+  countAll: Int
+  countDistinct: medical_staff_specializations_aggregated_count
+  group: JSON
+}
+
+type medical_staff_specializations_aggregated_count {
+  id: Int
+  name: Int
+}
+
+type medical_staffs {
+  birth_date: Date
+  birth_date_func: date_functions
+  description: String!
+  employment_date: Date
+  employment_date_func: date_functions
+  gender: String!
+  id: ID
+  medical_staff_specialization_id(
+    filter: medical_staff_specializations_filter
+    limit: Int
+    offset: Int
+    page: Int
+    search: String
+    sort: [String]
+  ): medical_staff_specializations
+  name: String!
+  photo_id(
+    filter: directus_files_filter
+    limit: Int
+    offset: Int
+    page: Int
+    search: String
+    sort: [String]
+  ): directus_files
+  position: String
+  svr_id(
+    filter: svrs_filter
+    limit: Int
+    offset: Int
+    page: Int
+    search: String
+    sort: [String]
+  ): svrs
+}
+
+type medical_staffs_aggregated {
+  count: medical_staffs_aggregated_count
+  countAll: Int
+  countDistinct: medical_staffs_aggregated_count
+  group: JSON
+}
+
+type medical_staffs_aggregated_count {
+  birth_date: Int
+  description: Int
+  employment_date: Int
+  gender: Int
+  id: Int
+  medical_staff_specialization_id: Int
+  name: Int
+  photo_id: Int
+  position: Int
+  svr_id: Int
+}
+
+type nutrition_types {
+  id: ID
+  name: String!
+}
+
+type nutrition_types_aggregated {
+  count: nutrition_types_aggregated_count
+  countAll: Int
+  countDistinct: nutrition_types_aggregated_count
+  group: JSON
+}
+
+type nutrition_types_aggregated_count {
+  id: Int
+  name: Int
+}
+
+type payment_types {
+  id: ID
+  name: String!
+}
+
+type payment_types_aggregated {
+  count: payment_types_aggregated_count
+  countAll: Int
+  countDistinct: payment_types_aggregated_count
+  group: JSON
+}
+
+type payment_types_aggregated_count {
+  id: Int
+  name: Int
+}
+
+type pool_photos {
+  id: ID
+  photo_id(
+    filter: directus_files_filter
+    limit: Int
+    offset: Int
+    page: Int
+    search: String
+    sort: [String]
+  ): directus_files
+  pool_id(
+    filter: pools_filter
+    limit: Int
+    offset: Int
+    page: Int
+    search: String
+    sort: [String]
+  ): pools
+  sort: Int
+}
+
+type pool_photos_aggregated {
+  avg: pool_photos_aggregated_fields
+  avgDistinct: pool_photos_aggregated_fields
+  count: pool_photos_aggregated_count
+  countAll: Int
+  countDistinct: pool_photos_aggregated_count
+  group: JSON
+  max: pool_photos_aggregated_fields
+  min: pool_photos_aggregated_fields
+  sum: pool_photos_aggregated_fields
+  sumDistinct: pool_photos_aggregated_fields
+}
+
+type pool_photos_aggregated_count {
+  id: Int
+  photo_id: Int
+  pool_id: Int
+  sort: Int
+}
+
+type pool_photos_aggregated_fields {
+  sort: Float
+}
+
+type pool_size_types {
+  id: ID
+  name: String!
+}
+
+type pool_size_types_aggregated {
+  count: pool_size_types_aggregated_count
+  countAll: Int
+  countDistinct: pool_size_types_aggregated_count
+  group: JSON
+}
+
+type pool_size_types_aggregated_count {
+  id: Int
+  name: Int
+}
+
+type pool_types {
+  id: ID
+  name: String!
+}
+
+type pool_types_aggregated {
+  count: pool_types_aggregated_count
+  countAll: Int
+  countDistinct: pool_types_aggregated_count
+  group: JSON
+}
+
+type pool_types_aggregated_count {
+  id: Int
+  name: Int
+}
+
+type pool_water_types {
+  id: ID
+  name: String!
+}
+
+type pool_water_types_aggregated {
+  count: pool_water_types_aggregated_count
+  countAll: Int
+  countDistinct: pool_water_types_aggregated_count
+  group: JSON
+}
+
+type pool_water_types_aggregated_count {
+  id: Int
+  name: Int
+}
+
+type pools {
+  has_water_heating: Boolean!
+  id: ID
+  photo_list(
+    filter: pool_photos_filter
+    limit: Int
+    offset: Int
+    page: Int
+    search: String
+    sort: [String]
+  ): [pool_photos]
+  photo_list_func: count_functions
+  security_measures: String!
+  size_id(
+    filter: pool_size_types_filter
+    limit: Int
+    offset: Int
+    page: Int
+    search: String
+    sort: [String]
+  ): pool_size_types
+  svr_id(
+    filter: svrs_filter
+    limit: Int
+    offset: Int
+    page: Int
+    search: String
+    sort: [String]
+  ): svrs
+  type_id(
+    filter: pool_types_filter
+    limit: Int
+    offset: Int
+    page: Int
+    search: String
+    sort: [String]
+  ): pool_types
+  water_type_id(
+    filter: pool_water_types_filter
+    limit: Int
+    offset: Int
+    page: Int
+    search: String
+    sort: [String]
+  ): pool_water_types
+}
+
+type pools_aggregated {
+  count: pools_aggregated_count
+  countAll: Int
+  countDistinct: pools_aggregated_count
+  group: JSON
+}
+
+type pools_aggregated_count {
+  has_water_heating: Int
+  id: Int
+  photo_list: Int
+  security_measures: Int
+  size_id: Int
+  svr_id: Int
+  type_id: Int
+  water_type_id: Int
+}
+
+type program_dates {
+  cashback: String
+  cost: Float!
+  date_finish: Date!
+  date_finish_func: date_functions
+  date_start: Date!
+  date_start_func: date_functions
+  id: ID
+  payment_types(
+    filter: program_dates_payment_types_filter
+    limit: Int
+    offset: Int
+    page: Int
+    search: String
+    sort: [String]
+  ): [program_dates_payment_types]
+  payment_types_func: count_functions
+  program_id(
+    filter: programs_filter
+    limit: Int
+    offset: Int
+    page: Int
+    search: String
+    sort: [String]
+  ): programs
+  services: String
+  social_certificate: String
+}
+
+type program_dates_aggregated {
+  avg: program_dates_aggregated_fields
+  avgDistinct: program_dates_aggregated_fields
+  count: program_dates_aggregated_count
+  countAll: Int
+  countDistinct: program_dates_aggregated_count
+  group: JSON
+  max: program_dates_aggregated_fields
+  min: program_dates_aggregated_fields
+  sum: program_dates_aggregated_fields
+  sumDistinct: program_dates_aggregated_fields
+}
+
+type program_dates_aggregated_count {
+  cashback: Int
+  cost: Int
+  date_finish: Int
+  date_start: Int
+  id: Int
+  payment_types: Int
+  program_id: Int
+  services: Int
+  social_certificate: Int
+}
+
+type program_dates_aggregated_fields {
+  cost: Float
+}
+
+type program_dates_payment_types {
+  id: ID
+  payment_types_id(
+    filter: payment_types_filter
+    limit: Int
+    offset: Int
+    page: Int
+    search: String
+    sort: [String]
+  ): payment_types
+  program_dates_id(
+    filter: program_dates_filter
+    limit: Int
+    offset: Int
+    page: Int
+    search: String
+    sort: [String]
+  ): program_dates
+}
+
+type program_dates_payment_types_aggregated {
+  avg: program_dates_payment_types_aggregated_fields
+  avgDistinct: program_dates_payment_types_aggregated_fields
+  count: program_dates_payment_types_aggregated_count
+  countAll: Int
+  countDistinct: program_dates_payment_types_aggregated_count
+  group: JSON
+  max: program_dates_payment_types_aggregated_fields
+  min: program_dates_payment_types_aggregated_fields
+  sum: program_dates_payment_types_aggregated_fields
+  sumDistinct: program_dates_payment_types_aggregated_fields
+}
+
+type program_dates_payment_types_aggregated_count {
+  id: Int
+  payment_types_id: Int
+  program_dates_id: Int
+}
+
+type program_dates_payment_types_aggregated_fields {
+  id: Float
+}
+
+type program_types {
+  id: ID
+  name: String!
+  photo_id(
+    filter: directus_files_filter
+    limit: Int
+    offset: Int
+    page: Int
+    search: String
+    sort: [String]
+  ): directus_files
+}
+
+type program_types_aggregated {
+  count: program_types_aggregated_count
+  countAll: Int
+  countDistinct: program_types_aggregated_count
+  group: JSON
+}
+
+type program_types_aggregated_count {
+  id: Int
+  name: Int
+  photo_id: Int
+}
+
+type programs {
+  age_from: Int!
+  age_to: Int!
+  date_list(
+    filter: program_dates_filter
+    limit: Int
+    offset: Int
+    page: Int
+    search: String
+    sort: [String]
+  ): [program_dates]
+  date_list_func: count_functions
+  description: String
+  id: ID
+  name: String!
+  photo_id(
+    filter: directus_files_filter
+    limit: Int
+    offset: Int
+    page: Int
+    search: String
+    sort: [String]
+  ): directus_files
+  program_type_id(
+    filter: program_types_filter
+    limit: Int
+    offset: Int
+    page: Int
+    search: String
+    sort: [String]
+  ): program_types
+  srv_id(
+    filter: svrs_filter
+    limit: Int
+    offset: Int
+    page: Int
+    search: String
+    sort: [String]
+  ): svrs
+}
+
+type programs_aggregated {
+  avg: programs_aggregated_fields
+  avgDistinct: programs_aggregated_fields
+  count: programs_aggregated_count
+  countAll: Int
+  countDistinct: programs_aggregated_count
+  group: JSON
+  max: programs_aggregated_fields
+  min: programs_aggregated_fields
+  sum: programs_aggregated_fields
+  sumDistinct: programs_aggregated_fields
+}
+
+type programs_aggregated_count {
+  age_from: Int
+  age_to: Int
+  date_list: Int
+  description: Int
+  id: Int
+  name: Int
+  photo_id: Int
+  program_type_id: Int
+  srv_id: Int
+}
+
+type programs_aggregated_fields {
+  age_from: Float
+  age_to: Float
+}
+
+type regions {
+  id: ID
+  name: String!
+}
+
+type regions_aggregated {
+  count: regions_aggregated_count
+  countAll: Int
+  countDistinct: regions_aggregated_count
+  group: JSON
+}
+
+type regions_aggregated_count {
+  id: Int
+  name: Int
+}
+
+type room_types {
+  id: ID
+  name: String!
+}
+
+type room_types_aggregated {
+  count: room_types_aggregated_count
+  countAll: Int
+  countDistinct: room_types_aggregated_count
+  group: JSON
+}
+
+type room_types_aggregated_count {
+  id: Int
+  name: Int
+}
+
+type rooms {
+  bed_type_id(
+    filter: bed_types_filter
+    limit: Int
+    offset: Int
+    page: Int
+    search: String
+    sort: [String]
+  ): bed_types
+  beds_count: Int!
+  description: String!
+  id: ID
+  name: String!
+  photo_id(
+    filter: directus_files_filter
+    limit: Int
+    offset: Int
+    page: Int
+    search: String
+    sort: [String]
+  ): directus_files
+  room_type_id(
+    filter: room_types_filter
+    limit: Int
+    offset: Int
+    page: Int
+    search: String
+    sort: [String]
+  ): room_types
+  seats_count: Int!
+  svr_id(
+    filter: svrs_filter
+    limit: Int
+    offset: Int
+    page: Int
+    search: String
+    sort: [String]
+  ): svrs
+}
+
+type rooms_aggregated {
+  avg: rooms_aggregated_fields
+  avgDistinct: rooms_aggregated_fields
+  count: rooms_aggregated_count
+  countAll: Int
+  countDistinct: rooms_aggregated_count
+  group: JSON
+  max: rooms_aggregated_fields
+  min: rooms_aggregated_fields
+  sum: rooms_aggregated_fields
+  sumDistinct: rooms_aggregated_fields
+}
+
+type rooms_aggregated_count {
+  bed_type_id: Int
+  beds_count: Int
+  description: Int
+  id: Int
+  name: Int
+  photo_id: Int
+  room_type_id: Int
+  seats_count: Int
+  svr_id: Int
+}
+
+type rooms_aggregated_fields {
+  beds_count: Float
+  seats_count: Float
+}
+
+type security_types {
+  id: ID
+  name: String!
+}
+
+type security_types_aggregated {
+  count: security_types_aggregated_count
+  countAll: Int
+  countDistinct: security_types_aggregated_count
+  group: JSON
+}
+
+type security_types_aggregated_count {
+  id: Int
+  name: Int
+}
+
+type social_networks {
+  id: ID
+  link: String!
+  svr_id(
+    filter: svrs_filter
+    limit: Int
+    offset: Int
+    page: Int
+    search: String
+    sort: [String]
+  ): svrs
+  type: String!
+}
+
+type social_networks_aggregated {
+  count: social_networks_aggregated_count
+  countAll: Int
+  countDistinct: social_networks_aggregated_count
+  group: JSON
+}
+
+type social_networks_aggregated_count {
+  id: Int
+  link: Int
+  svr_id: Int
+  type: Int
+}
+
+type sport_photos {
+  id: ID
+  photo_id(
+    filter: directus_files_filter
+    limit: Int
+    offset: Int
+    page: Int
+    search: String
+    sort: [String]
+  ): directus_files
+  sort: Int
+  sport_id(
+    filter: sports_filter
+    limit: Int
+    offset: Int
+    page: Int
+    search: String
+    sort: [String]
+  ): sports
+}
+
+type sport_photos_aggregated {
+  avg: sport_photos_aggregated_fields
+  avgDistinct: sport_photos_aggregated_fields
+  count: sport_photos_aggregated_count
+  countAll: Int
+  countDistinct: sport_photos_aggregated_count
+  group: JSON
+  max: sport_photos_aggregated_fields
+  min: sport_photos_aggregated_fields
+  sum: sport_photos_aggregated_fields
+  sumDistinct: sport_photos_aggregated_fields
+}
+
+type sport_photos_aggregated_count {
+  id: Int
+  photo_id: Int
+  sort: Int
+  sport_id: Int
+}
+
+type sport_photos_aggregated_fields {
+  sort: Float
+}
+
+type sport_types {
+  id: ID
+  name: String!
+}
+
+type sport_types_aggregated {
+  count: sport_types_aggregated_count
+  countAll: Int
+  countDistinct: sport_types_aggregated_count
+  group: JSON
+}
+
+type sport_types_aggregated_count {
+  id: Int
+  name: Int
+}
+
+type sports {
+  description: String!
+  id: ID
+  name: String!
+  photo_list(
+    filter: sport_photos_filter
+    limit: Int
+    offset: Int
+    page: Int
+    search: String
+    sort: [String]
+  ): [sport_photos]
+  photo_list_func: count_functions
+  sport_type_id(
+    filter: sport_types_filter
+    limit: Int
+    offset: Int
+    page: Int
+    search: String
+    sort: [String]
+  ): sport_types
+  svr_id(
+    filter: svrs_filter
+    limit: Int
+    offset: Int
+    page: Int
+    search: String
+    sort: [String]
+  ): svrs
+}
+
+type sports_aggregated {
+  count: sports_aggregated_count
+  countAll: Int
+  countDistinct: sports_aggregated_count
+  group: JSON
+}
+
+type sports_aggregated_count {
+  description: Int
+  id: Int
+  name: Int
+  photo_list: Int
+  sport_type_id: Int
+  svr_id: Int
+}
+
+type staff_specializations {
+  id: ID
+  name: String!
+}
+
+type staff_specializations_aggregated {
+  count: staff_specializations_aggregated_count
+  countAll: Int
+  countDistinct: staff_specializations_aggregated_count
+  group: JSON
+}
+
+type staff_specializations_aggregated_count {
+  id: Int
+  name: Int
+}
+
+type staffs {
+  birth_date: Date
+  birth_date_func: date_functions
+  description: String!
+  employment_date: Date
+  employment_date_func: date_functions
+  gender: String!
+  id: ID
+  name: String!
+  photo_id(
+    filter: directus_files_filter
+    limit: Int
+    offset: Int
+    page: Int
+    search: String
+    sort: [String]
+  ): directus_files
+  position: String
+  staff_specialization_id(
+    filter: staff_specializations_filter
+    limit: Int
+    offset: Int
+    page: Int
+    search: String
+    sort: [String]
+  ): staff_specializations
+  svr_id(
+    filter: svrs_filter
+    limit: Int
+    offset: Int
+    page: Int
+    search: String
+    sort: [String]
+  ): svrs
+}
+
+type staffs_aggregated {
+  count: staffs_aggregated_count
+  countAll: Int
+  countDistinct: staffs_aggregated_count
+  group: JSON
+}
+
+type staffs_aggregated_count {
+  birth_date: Int
+  description: Int
+  employment_date: Int
+  gender: Int
+  id: Int
+  name: Int
+  photo_id: Int
+  position: Int
+  staff_specialization_id: Int
+  svr_id: Int
+}
+
+type svr_photos {
+  id: ID
+  photo_id(
+    filter: directus_files_filter
+    limit: Int
+    offset: Int
+    page: Int
+    search: String
+    sort: [String]
+  ): directus_files
+  sort: Int
+  svr_id(
+    filter: svrs_filter
+    limit: Int
+    offset: Int
+    page: Int
+    search: String
+    sort: [String]
+  ): svrs
+  type: String!
+}
+
+type svr_photos_aggregated {
+  avg: svr_photos_aggregated_fields
+  avgDistinct: svr_photos_aggregated_fields
+  count: svr_photos_aggregated_count
+  countAll: Int
+  countDistinct: svr_photos_aggregated_count
+  group: JSON
+  max: svr_photos_aggregated_fields
+  min: svr_photos_aggregated_fields
+  sum: svr_photos_aggregated_fields
+  sumDistinct: svr_photos_aggregated_fields
+}
+
+type svr_photos_aggregated_count {
+  id: Int
+  photo_id: Int
+  sort: Int
+  svr_id: Int
+  type: Int
+}
+
+type svr_photos_aggregated_fields {
+  sort: Float
+}
+
+type svr_types {
+  id: ID
+  name: String!
+  photo_id(
+    filter: directus_files_filter
+    limit: Int
+    offset: Int
+    page: Int
+    search: String
+    sort: [String]
+  ): directus_files
+}
+
+type svr_types_aggregated {
+  count: svr_types_aggregated_count
+  countAll: Int
+  countDistinct: svr_types_aggregated_count
+  group: JSON
+}
+
+type svr_types_aggregated_count {
+  id: Int
+  name: Int
+  photo_id: Int
+}
+
+type svrs {
+  address: String
+  beach_description: String
+  beach_distance_type_id(
+    filter: beach_distance_types_filter
+    limit: Int
+    offset: Int
+    page: Int
+    search: String
+    sort: [String]
+  ): beach_distance_types
+  building_list(
+    filter: buildings_filter
+    limit: Int
+    offset: Int
+    page: Int
+    search: String
+    sort: [String]
+  ): [buildings]
+  building_list_func: count_functions
+  capacity: String
+  city_id(
+    filter: cities_filter
+    limit: Int
+    offset: Int
+    page: Int
+    search: String
+    sort: [String]
+  ): cities
+  contact_email: String
+  contact_name: String
+  contact_phone: String
+  daily_routine: String
+  description: String
+  email: String
+  has_beach: Boolean
+  has_medical_center: Boolean
+  id: ID
+  landscape: String
+  lighting: String
+  logistics: String
+  meal_list(
+    filter: meals_filter
+    limit: Int
+    offset: Int
+    page: Int
+    search: String
+    sort: [String]
+  ): [meals]
+  meal_list_func: count_functions
+  medical_staff_list(
+    filter: medical_staffs_filter
+    limit: Int
+    offset: Int
+    page: Int
+    search: String
+    sort: [String]
+  ): [medical_staffs]
+  medical_staff_list_func: count_functions
+  name: String
+  open_date: Date
+  open_date_func: date_functions
+  park: String
+  partner_id: String
+  phone: String
+  photo_list(
+    filter: svr_photos_filter
+    limit: Int
+    offset: Int
+    page: Int
+    search: String
+    sort: [String]
+  ): [svr_photos]
+  photo_list_func: count_functions
+  pool_list(
+    filter: pools_filter
+    limit: Int
+    offset: Int
+    page: Int
+    search: String
+    sort: [String]
+  ): [pools]
+  pool_list_func: count_functions
+  preparing: String
+  program_list(
+    filter: programs_filter
+    limit: Int
+    offset: Int
+    page: Int
+    search: String
+    sort: [String]
+  ): [programs]
+  program_list_func: count_functions
+  program_org: String
+  published: Boolean
+  registry: Boolean
+  required_documents: String
+  rest_places: String
+  reviews: JSON
+  reviews_func: count_functions
+  room_list(
+    filter: rooms_filter
+    limit: Int
+    offset: Int
+    page: Int
+    search: String
+    sort: [String]
+  ): [rooms]
+  room_list_func: count_functions
+  security_access_control: String
+  security_has_video_surveillance: Boolean
+  security_measures: String
+  security_type_id(
+    filter: security_types_filter
+    limit: Int
+    offset: Int
+    page: Int
+    search: String
+    sort: [String]
+  ): security_types
+  slogan: String
+  social_network_list(
+    filter: social_networks_filter
+    limit: Int
+    offset: Int
+    page: Int
+    search: String
+    sort: [String]
+  ): [social_networks]
+  social_network_list_func: count_functions
+  sport_list(
+    filter: sports_filter
+    limit: Int
+    offset: Int
+    page: Int
+    search: String
+    sort: [String]
+  ): [sports]
+  sport_list_func: count_functions
+  staff_list(
+    filter: staffs_filter
+    limit: Int
+    offset: Int
+    page: Int
+    search: String
+    sort: [String]
+  ): [staffs]
+  staff_list_func: count_functions
+  tour_operator: String
+  type_id(
+    filter: svr_types_filter
+    limit: Int
+    offset: Int
+    page: Int
+    search: String
+    sort: [String]
+  ): svr_types
+}
+
+type svrs_aggregated {
+  count: svrs_aggregated_count
+  countAll: Int
+  countDistinct: svrs_aggregated_count
+  group: JSON
+}
+
+type svrs_aggregated_count {
+  address: Int
+  beach_description: Int
+  beach_distance_type_id: Int
+  building_list: Int
+  capacity: Int
+  city_id: Int
+  contact_email: Int
+  contact_name: Int
+  contact_phone: Int
+  daily_routine: Int
+  description: Int
+  email: Int
+  has_beach: Int
+  has_medical_center: Int
+  id: Int
+  landscape: Int
+  lighting: Int
+  logistics: Int
+  meal_list: Int
+  medical_staff_list: Int
+  name: Int
+  open_date: Int
+  park: Int
+  partner_id: Int
+  phone: Int
+  photo_list: Int
+  pool_list: Int
+  preparing: Int
+  program_list: Int
+  program_org: Int
+  published: Int
+  registry: Int
+  required_documents: Int
+  rest_places: Int
+  reviews: Int
+  room_list: Int
+  security_access_control: Int
+  security_has_video_surveillance: Int
+  security_measures: Int
+  security_type_id: Int
+  slogan: Int
+  social_network_list: Int
+  sport_list: Int
+  staff_list: Int
+  tour_operator: Int
+  type_id: Int
+}
+
+"ISO8601 Date values"
+scalar Date
+
+"A Float or a String"
+scalar GraphQLStringOrFloat
+
+"The `JSON` scalar type represents JSON values as specified by [ECMA-404](http://www.ecma-international.org/publications/files/ECMA-ST/ECMA-404.pdf)."
+scalar JSON
+
+input beach_distance_types_filter {
+  _and: [beach_distance_types_filter]
+  _or: [beach_distance_types_filter]
+  id: string_filter_operators
+  name: string_filter_operators
+}
+
+input bed_types_filter {
+  _and: [bed_types_filter]
+  _or: [bed_types_filter]
+  id: string_filter_operators
+  name: string_filter_operators
+}
+
+input boolean_filter_operators {
+  _eq: Boolean
+  _neq: Boolean
+  _nnull: Boolean
+  _null: Boolean
+}
+
+input building_photos_filter {
+  _and: [building_photos_filter]
+  _or: [building_photos_filter]
+  building_id: buildings_filter
+  id: string_filter_operators
+  photo_id: directus_files_filter
+  sort: number_filter_operators
+}
+
+input building_types_filter {
+  _and: [building_types_filter]
+  _or: [building_types_filter]
+  id: string_filter_operators
+  name: string_filter_operators
+}
+
+input buildings_filter {
+  _and: [buildings_filter]
+  _or: [buildings_filter]
+  floors_count: string_filter_operators
+  id: string_filter_operators
+  name: string_filter_operators
+  photo_list: building_photos_filter
+  photo_list_func: count_function_filter_operators
+  public_spaces: string_filter_operators
+  reconstruction_date: date_filter_operators
+  reconstruction_date_func: date_function_filter_operators
+  sections: string_filter_operators
+  storage_locations: string_filter_operators
+  svr_id: svrs_filter
+  type_id: building_types_filter
+}
+
+input cities_filter {
+  _and: [cities_filter]
+  _or: [cities_filter]
+  id: string_filter_operators
+  is_regional_center: boolean_filter_operators
+  name: string_filter_operators
+  region_id: regions_filter
+}
+
+input count_function_filter_operators {
+  count: number_filter_operators
+}
+
+input create_subscribers_input {
+  created_at: Date
+  email: String!
+  first_name: String!
+  id: ID
+  last_name: String!
+  phone: String!
+}
+
+input date_filter_operators {
+  _between: [GraphQLStringOrFloat]
+  _eq: String
+  _gt: String
+  _gte: String
+  _lt: String
+  _lte: String
+  _nbetween: [GraphQLStringOrFloat]
+  _neq: String
+  _nnull: Boolean
+  _null: Boolean
+}
+
+input date_function_filter_operators {
+  day: number_filter_operators
+  month: number_filter_operators
+  week: number_filter_operators
+  weekday: number_filter_operators
+  year: number_filter_operators
+}
+
+input datetime_function_filter_operators {
+  day: number_filter_operators
+  hour: number_filter_operators
+  minute: number_filter_operators
+  month: number_filter_operators
+  second: number_filter_operators
+  week: number_filter_operators
+  weekday: number_filter_operators
+  year: number_filter_operators
+}
+
+input directus_files_filter {
+  _and: [directus_files_filter]
+  _or: [directus_files_filter]
+  charset: string_filter_operators
+  description: string_filter_operators
+  duration: number_filter_operators
+  embed: string_filter_operators
+  filename_disk: string_filter_operators
+  filename_download: string_filter_operators
+  filesize: string_filter_operators
+  folder: string_filter_operators
+  height: number_filter_operators
+  id: string_filter_operators
+  location: string_filter_operators
+  metadata: string_filter_operators
+  metadata_func: count_function_filter_operators
+  modified_by: string_filter_operators
+  modified_on: date_filter_operators
+  modified_on_func: datetime_function_filter_operators
+  storage: string_filter_operators
+  tags: string_filter_operators
+  tags_func: count_function_filter_operators
+  title: string_filter_operators
+  type: string_filter_operators
+  uploaded_by: string_filter_operators
+  uploaded_on: date_filter_operators
+  uploaded_on_func: datetime_function_filter_operators
+  width: number_filter_operators
+}
+
+input meal_plans_filter {
+  _and: [meal_plans_filter]
+  _or: [meal_plans_filter]
+  id: string_filter_operators
+  name: string_filter_operators
+}
+
+input meals_filter {
+  _and: [meals_filter]
+  _or: [meals_filter]
+  description: string_filter_operators
+  id: string_filter_operators
+  meal_plan_id: meal_plans_filter
+  nutrition_type_id: nutrition_types_filter
+  svr_id: svrs_filter
+}
+
+input medical_staff_specializations_filter {
+  _and: [medical_staff_specializations_filter]
+  _or: [medical_staff_specializations_filter]
+  id: string_filter_operators
+  name: string_filter_operators
+}
+
+input medical_staffs_filter {
+  _and: [medical_staffs_filter]
+  _or: [medical_staffs_filter]
+  birth_date: date_filter_operators
+  birth_date_func: date_function_filter_operators
+  description: string_filter_operators
+  employment_date: date_filter_operators
+  employment_date_func: date_function_filter_operators
+  gender: string_filter_operators
+  id: string_filter_operators
+  medical_staff_specialization_id: medical_staff_specializations_filter
+  name: string_filter_operators
+  photo_id: directus_files_filter
+  position: string_filter_operators
+  svr_id: svrs_filter
+}
+
+input number_filter_operators {
+  _between: [GraphQLStringOrFloat]
+  _eq: GraphQLStringOrFloat
+  _gt: GraphQLStringOrFloat
+  _gte: GraphQLStringOrFloat
+  _in: [GraphQLStringOrFloat]
+  _lt: GraphQLStringOrFloat
+  _lte: GraphQLStringOrFloat
+  _nbetween: [GraphQLStringOrFloat]
+  _neq: GraphQLStringOrFloat
+  _nin: [GraphQLStringOrFloat]
+  _nnull: Boolean
+  _null: Boolean
+}
+
+input nutrition_types_filter {
+  _and: [nutrition_types_filter]
+  _or: [nutrition_types_filter]
+  id: string_filter_operators
+  name: string_filter_operators
+}
+
+input payment_types_filter {
+  _and: [payment_types_filter]
+  _or: [payment_types_filter]
+  id: string_filter_operators
+  name: string_filter_operators
+}
+
+input pool_photos_filter {
+  _and: [pool_photos_filter]
+  _or: [pool_photos_filter]
+  id: string_filter_operators
+  photo_id: directus_files_filter
+  pool_id: pools_filter
+  sort: number_filter_operators
+}
+
+input pool_size_types_filter {
+  _and: [pool_size_types_filter]
+  _or: [pool_size_types_filter]
+  id: string_filter_operators
+  name: string_filter_operators
+}
+
+input pool_types_filter {
+  _and: [pool_types_filter]
+  _or: [pool_types_filter]
+  id: string_filter_operators
+  name: string_filter_operators
+}
+
+input pool_water_types_filter {
+  _and: [pool_water_types_filter]
+  _or: [pool_water_types_filter]
+  id: string_filter_operators
+  name: string_filter_operators
+}
+
+input pools_filter {
+  _and: [pools_filter]
+  _or: [pools_filter]
+  has_water_heating: boolean_filter_operators
+  id: string_filter_operators
+  photo_list: pool_photos_filter
+  photo_list_func: count_function_filter_operators
+  security_measures: string_filter_operators
+  size_id: pool_size_types_filter
+  svr_id: svrs_filter
+  type_id: pool_types_filter
+  water_type_id: pool_water_types_filter
+}
+
+input program_dates_filter {
+  _and: [program_dates_filter]
+  _or: [program_dates_filter]
+  cashback: string_filter_operators
+  cost: number_filter_operators
+  date_finish: date_filter_operators
+  date_finish_func: date_function_filter_operators
+  date_start: date_filter_operators
+  date_start_func: date_function_filter_operators
+  id: string_filter_operators
+  payment_types: program_dates_payment_types_filter
+  payment_types_func: count_function_filter_operators
+  program_id: programs_filter
+  services: string_filter_operators
+  social_certificate: string_filter_operators
+}
+
+input program_dates_payment_types_filter {
+  _and: [program_dates_payment_types_filter]
+  _or: [program_dates_payment_types_filter]
+  id: number_filter_operators
+  payment_types_id: payment_types_filter
+  program_dates_id: program_dates_filter
+}
+
+input program_types_filter {
+  _and: [program_types_filter]
+  _or: [program_types_filter]
+  id: string_filter_operators
+  name: string_filter_operators
+  photo_id: directus_files_filter
+}
+
+input programs_filter {
+  _and: [programs_filter]
+  _or: [programs_filter]
+  age_from: number_filter_operators
+  age_to: number_filter_operators
+  date_list: program_dates_filter
+  date_list_func: count_function_filter_operators
+  description: string_filter_operators
+  id: string_filter_operators
+  name: string_filter_operators
+  photo_id: directus_files_filter
+  program_type_id: program_types_filter
+  srv_id: svrs_filter
+}
+
+input regions_filter {
+  _and: [regions_filter]
+  _or: [regions_filter]
+  id: string_filter_operators
+  name: string_filter_operators
+}
+
+input room_types_filter {
+  _and: [room_types_filter]
+  _or: [room_types_filter]
+  id: string_filter_operators
+  name: string_filter_operators
+}
+
+input rooms_filter {
+  _and: [rooms_filter]
+  _or: [rooms_filter]
+  bed_type_id: bed_types_filter
+  beds_count: number_filter_operators
+  description: string_filter_operators
+  id: string_filter_operators
+  name: string_filter_operators
+  photo_id: directus_files_filter
+  room_type_id: room_types_filter
+  seats_count: number_filter_operators
+  svr_id: svrs_filter
+}
+
+input security_types_filter {
+  _and: [security_types_filter]
+  _or: [security_types_filter]
+  id: string_filter_operators
+  name: string_filter_operators
+}
+
+input social_networks_filter {
+  _and: [social_networks_filter]
+  _or: [social_networks_filter]
+  id: string_filter_operators
+  link: string_filter_operators
+  svr_id: svrs_filter
+  type: string_filter_operators
+}
+
+input sport_photos_filter {
+  _and: [sport_photos_filter]
+  _or: [sport_photos_filter]
+  id: string_filter_operators
+  photo_id: directus_files_filter
+  sort: number_filter_operators
+  sport_id: sports_filter
+}
+
+input sport_types_filter {
+  _and: [sport_types_filter]
+  _or: [sport_types_filter]
+  id: string_filter_operators
+  name: string_filter_operators
+}
+
+input sports_filter {
+  _and: [sports_filter]
+  _or: [sports_filter]
+  description: string_filter_operators
+  id: string_filter_operators
+  name: string_filter_operators
+  photo_list: sport_photos_filter
+  photo_list_func: count_function_filter_operators
+  sport_type_id: sport_types_filter
+  svr_id: svrs_filter
+}
+
+input staff_specializations_filter {
+  _and: [staff_specializations_filter]
+  _or: [staff_specializations_filter]
+  id: string_filter_operators
+  name: string_filter_operators
+}
+
+input staffs_filter {
+  _and: [staffs_filter]
+  _or: [staffs_filter]
+  birth_date: date_filter_operators
+  birth_date_func: date_function_filter_operators
+  description: string_filter_operators
+  employment_date: date_filter_operators
+  employment_date_func: date_function_filter_operators
+  gender: string_filter_operators
+  id: string_filter_operators
+  name: string_filter_operators
+  photo_id: directus_files_filter
+  position: string_filter_operators
+  staff_specialization_id: staff_specializations_filter
+  svr_id: svrs_filter
+}
+
+input string_filter_operators {
+  _contains: String
+  _empty: Boolean
+  _ends_with: String
+  _eq: String
+  _in: [String]
+  _ncontains: String
+  _nempty: Boolean
+  _nends_with: String
+  _neq: String
+  _nin: [String]
+  _nnull: Boolean
+  _nstarts_with: String
+  _null: Boolean
+  _starts_with: String
+}
+
+input svr_photos_filter {
+  _and: [svr_photos_filter]
+  _or: [svr_photos_filter]
+  id: string_filter_operators
+  photo_id: directus_files_filter
+  sort: number_filter_operators
+  svr_id: svrs_filter
+  type: string_filter_operators
+}
+
+input svr_types_filter {
+  _and: [svr_types_filter]
+  _or: [svr_types_filter]
+  id: string_filter_operators
+  name: string_filter_operators
+  photo_id: directus_files_filter
+}
+
+input svrs_filter {
+  _and: [svrs_filter]
+  _or: [svrs_filter]
+  address: string_filter_operators
+  beach_description: string_filter_operators
+  beach_distance_type_id: beach_distance_types_filter
+  building_list: buildings_filter
+  building_list_func: count_function_filter_operators
+  capacity: string_filter_operators
+  city_id: cities_filter
+  contact_email: string_filter_operators
+  contact_name: string_filter_operators
+  contact_phone: string_filter_operators
+  daily_routine: string_filter_operators
+  description: string_filter_operators
+  email: string_filter_operators
+  has_beach: boolean_filter_operators
+  has_medical_center: boolean_filter_operators
+  id: string_filter_operators
+  landscape: string_filter_operators
+  lighting: string_filter_operators
+  logistics: string_filter_operators
+  meal_list: meals_filter
+  meal_list_func: count_function_filter_operators
+  medical_staff_list: medical_staffs_filter
+  medical_staff_list_func: count_function_filter_operators
+  name: string_filter_operators
+  open_date: date_filter_operators
+  open_date_func: date_function_filter_operators
+  park: string_filter_operators
+  partner_id: string_filter_operators
+  phone: string_filter_operators
+  photo_list: svr_photos_filter
+  photo_list_func: count_function_filter_operators
+  pool_list: pools_filter
+  pool_list_func: count_function_filter_operators
+  preparing: string_filter_operators
+  program_list: programs_filter
+  program_list_func: count_function_filter_operators
+  program_org: string_filter_operators
+  published: boolean_filter_operators
+  registry: boolean_filter_operators
+  required_documents: string_filter_operators
+  rest_places: string_filter_operators
+  reviews: string_filter_operators
+  reviews_func: count_function_filter_operators
+  room_list: rooms_filter
+  room_list_func: count_function_filter_operators
+  security_access_control: string_filter_operators
+  security_has_video_surveillance: boolean_filter_operators
+  security_measures: string_filter_operators
+  security_type_id: security_types_filter
+  slogan: string_filter_operators
+  social_network_list: social_networks_filter
+  social_network_list_func: count_function_filter_operators
+  sport_list: sports_filter
+  sport_list_func: count_function_filter_operators
+  staff_list: staffs_filter
+  staff_list_func: count_function_filter_operators
+  tour_operator: string_filter_operators
+  type_id: svr_types_filter
+}

@@ -1,0 +1,131 @@
+query GET_SVR_BY_ID($id: ID!) {
+  svrs_by_id(id: $id) {
+    id
+    name
+    type_id {
+      # id
+      name
+    }
+    # partner_id
+    # published
+    # registry
+    city_id {
+      id
+      name
+    }
+    address
+    # phone
+    # email
+    # contact_name
+    # contact_phone
+    # contact_email
+    slogan
+    open_date
+    description
+    logistics
+    # capacity
+    # program_org
+    tour_operator
+    # landscape
+    # park
+    # rest_places
+    # lighting
+    # has_medical_center
+    daily_routine
+    required_documents
+    preparing
+    social_network_list {
+      type
+      link
+    }
+    photo_list {
+      photo_id {
+        id
+      }
+      type
+      # sort
+    }
+    # pool_list {
+    #   id
+    #   type_id {
+    #     name
+    #   }
+    #   size_id {
+    #     name
+    #   }
+    #   photo_list {
+    #     id
+    #     photo_id {
+    #       id
+    #     }
+    #   }
+    # }
+    # room_list {
+    #   id
+    #   svr_id {
+    #     id
+    #     name
+    #   }
+    #   name
+    #   description
+    #   seats_count
+    #   beds_count
+    #   room_type_id {
+    #     id
+    #     name
+    #   }
+    #   bed_type_id {
+    #     id
+    #     name
+    #   }
+    #   photo_id {
+    #     id
+    #   }
+    # }
+    # building_list {
+    #   id
+    #   name
+    # }
+    # meal_list {}
+    # sport_list {}
+    # staff_list {}
+    # medical_staff_list {}
+    # has_beach
+    # beach_distance_type_id
+    # beach_description
+    # security_type_id
+    # security_measures
+    # security_access_control
+    # security_has_video_surveillance
+    program_list {
+      id
+      name
+      description
+      # age_from
+      # age_to
+      program_type_id {
+        # id
+        name
+        photo_id {
+          id
+        }
+      }
+      date_list {
+        # id
+        date_start
+        date_finish
+        cost
+        # services
+        # social_certificate
+        # cashback
+        # payment_types {
+        #   payment_types_id {
+        #     id
+        #     name
+        #   }
+        # }
+      }
+    }
+    # reviews
+  }
+}

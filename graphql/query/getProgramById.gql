@@ -1,0 +1,31 @@
+query GET_PROGRAM_BY_ID($id: ID!) {
+  programs_by_id(id: $id) {
+    id
+    name
+    description
+    age_from
+    age_to
+    program_type_id {
+      id
+      name
+      photo_id {
+        id
+      }
+    }
+    date_list {
+      id
+      date_start
+      date_finish
+      cost
+      services
+      social_certificate
+      cashback
+      payment_types {
+        payment_types_id {
+          id
+          name
+        }
+      }
+    }
+  }
+}
